@@ -1,0 +1,126 @@
+.answer{
+    display: none;
+    opacity: 0.5;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    min-height: 100vh;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 90%;
+    border-radius: 20px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+
+}
+
+footer{
+    position: relative;
+    bottom: 10px;
+}
+
+.groups{
+    padding: 40px 20px;
+}
+
+.heading{
+    text-align: center;
+}
+
+.image{
+    content:url("../images/illustration-woman-online-mobile.svg");
+    width: 75%;
+    position: relative;
+    bottom: 110px;
+
+}
+
+.image-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+
+@media only screen and (min-width: 376px){  /* Desktop version  */
+
+    body{
+        min-height: 100vh;
+    }
+
+    .box{
+        content: url("../images/illustration-box-desktop.svg");
+        width: 30%;
+        z-index: 1;
+        position: relative;
+        right: 290px;
+        top: 290px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 60%;
+        padding-right: 50px;
+        margin-top: 0px;
+
+    }
+
+    footer{
+        position: fixed;
+        bottom: 10px;
+    }
+
+    .groups{
+        width: 50%;
+
+    }
+
+    .image{
+        content:url("../images/illustration-woman-online-desktop.svg");
+        width: 100%;
+        height: auto;
+        z-index: 0;
+        position: relative;
+        right: 100px;
+        bottom: 80px;
+        
+    }
+
+    .image-div{
+        position: relative;
+        bottom: 300px;
+    }
+
+    .question-highlighted{
+        font-weight: 700;
+    }
+}
+
+
+.question{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+}
+
+.question-highlighted{
+    font-weight: 700;
+}
+
